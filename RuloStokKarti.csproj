@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7455976D-3A97-453B-B38B-307B7544B09D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RuloStokKarti</RootNamespace>
+    <AssemblyName>RuloStokKarti</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Islemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Islemler.Designer.cs">
+      <DependentUpon>Islemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RULOSACDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RULOSACDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RULOSACDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RULOSACDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RULOSACDataSet2.cs">
+      <DependentUpon>RULOSACDataSet2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RULOSACDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RULOSACDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RuloStokKartDataSet.cs">
+      <DependentUpon>RuloStokKartDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RuloStokKartDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RuloStokKartDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sevkiyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sevkiyat.Designer.cs">
+      <DependentUpon>Sevkiyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis.Designer.cs">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokKart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokKart.Designer.cs">
+      <DependentUpon>StokKart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uretim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uretim.Designer.cs">
+      <DependentUpon>Uretim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Islemler.resx">
+      <DependentUpon>Islemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sevkiyat.resx">
+      <DependentUpon>Sevkiyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis.resx">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokKart.resx">
+      <DependentUpon>StokKart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Uretim.resx">
+      <DependentUpon>Uretim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RULOSACDataSet.xsc">
+      <DependentUpon>RULOSACDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RULOSACDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RULOSACDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RULOSACDataSet.xss">
+      <DependentUpon>RULOSACDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RULOSACDataSet1.xsc">
+      <DependentUpon>RULOSACDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RULOSACDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RULOSACDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RULOSACDataSet1.xss">
+      <DependentUpon>RULOSACDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RULOSACDataSet2.xsc">
+      <DependentUpon>RULOSACDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RULOSACDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RULOSACDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RULOSACDataSet2.xss">
+      <DependentUpon>RULOSACDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RuloStokKartDataSet.xsc">
+      <DependentUpon>RuloStokKartDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RuloStokKartDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RuloStokKartDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RuloStokKartDataSet.xss">
+      <DependentUpon>RuloStokKartDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\azimticaret.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
